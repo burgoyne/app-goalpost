@@ -98,34 +98,40 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9DQ-yI-deg">
                                                     <rect key="frame" x="10" y="0.0" width="307" height="69.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tnA-wk-hQx">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tnA-wk-hQx">
                                                             <rect key="frame" x="0.0" y="0.0" width="307" height="45"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbj-FQ-1pP">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="58.5" height="45"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="45"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="50" id="piJ-rE-VHs"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Eat salad twice a week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UA4-1k-f3Y">
-                                                                    <rect key="frame" x="63.5" y="0.0" width="243.5" height="45"/>
+                                                                    <rect key="frame" x="55" y="0.0" width="252" height="45"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WWF-bD-k5M">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WWF-bD-k5M">
                                                             <rect key="frame" x="0.0" y="50" width="307" height="19.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwN-ma-eed">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="98" height="19.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="19.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="40" id="jGM-1o-TIq"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Short Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ws-1U-M8z">
-                                                                    <rect key="frame" x="103" y="0.0" width="204" height="19.5"/>
+                                                                    <rect key="frame" x="45" y="0.0" width="262" height="19.5"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -134,10 +140,30 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttt-Mp-WEz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Complete!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-f8-a3x">
+                                                            <rect key="frame" x="66" y="15" width="243" height="41"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.96470588239999999" green="0.52549019610000003" blue="0.13725490200000001" alpha="0.75" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qtE-f8-a3x" firstAttribute="centerY" secondItem="Ttt-Mp-WEz" secondAttribute="centerY" id="gng-lP-M4U"/>
+                                                        <constraint firstItem="qtE-f8-a3x" firstAttribute="centerX" secondItem="Ttt-Mp-WEz" secondAttribute="centerX" id="iId-60-Jbo"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Ttt-Mp-WEz" firstAttribute="top" secondItem="H4f-lk-uBf" secondAttribute="top" id="0m2-Bb-obg"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ttt-Mp-WEz" secondAttribute="bottom" id="Eif-Zk-0T8"/>
                                                 <constraint firstItem="9DQ-yI-deg" firstAttribute="top" secondItem="H4f-lk-uBf" secondAttribute="top" id="EmG-gL-HIa"/>
+                                                <constraint firstItem="Ttt-Mp-WEz" firstAttribute="leading" secondItem="H4f-lk-uBf" secondAttribute="leading" id="IUN-0V-fuw"/>
                                                 <constraint firstItem="Igc-IX-c88" firstAttribute="leading" secondItem="9DQ-yI-deg" secondAttribute="trailing" constant="10" id="S3d-RH-wAn"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ttt-Mp-WEz" secondAttribute="trailing" id="el7-YI-GHa"/>
                                                 <constraint firstAttribute="bottom" secondItem="Igc-IX-c88" secondAttribute="bottom" constant="-0.80000000000000004" id="n3D-w7-vHa"/>
                                                 <constraint firstAttribute="trailing" secondItem="Igc-IX-c88" secondAttribute="trailing" constant="8" id="pRZ-pY-h5W"/>
                                                 <constraint firstAttribute="bottom" secondItem="9DQ-yI-deg" secondAttribute="bottom" id="pg7-AL-yGt"/>
@@ -146,6 +172,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="Ttt-Mp-WEz" id="6mj-xI-ZWe"/>
                                             <outlet property="goalDescriptionLbl" destination="UA4-1k-f3Y" id="dcs-X2-6Fo"/>
                                             <outlet property="goalProgressLbl" destination="Igc-IX-c88" id="kXL-qY-OLA"/>
                                             <outlet property="goalTypeLbl" destination="4Ws-1U-M8z" id="k5v-9i-WoM"/>
